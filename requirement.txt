@@ -1,5 +1,0 @@
-services:
-  - name: streamlit-app
-    type: web
-    buildCommand: streamlit run app.py
-    env: python
