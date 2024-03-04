@@ -45,7 +45,7 @@ def extract_tar(tar_file_path, extract_to_path):
 # file usage:
 tar_file = (r'final.tar.gz')  # Path to the TAR.GZ file
 df = tar_file  # Path to extract the contents of the TAR.GZ file
-df=df.drop(['Unnamed: 0'],axis=1) 
+#df=df.drop(['Unnamed: 0'],axis=1) 
 
 
 extract_tar(tar_file_path, extract_to_path)
