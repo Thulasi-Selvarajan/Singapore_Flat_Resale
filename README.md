@@ -34,6 +34,10 @@ Welcome to the Singapore Resale Flat Prices Prediction project! This project inv
 
    Develop an intuitive web application using Streamlit, allowing users to input flat details for price predictions.
 
+**6. Render Deployment:**
+
+   https://singapore-flats-resale-12.onrender.com
+
 **Tools:**
    
    Python, Pandas, numpy, matplotlib, seaborn, Plotly, Streamlit, sklearn.
