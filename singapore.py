@@ -44,13 +44,17 @@ def extract_tar(tar_file_path, extract_to_path):
 
 # Define the paths to your TAR.GZ file and the extraction destination
 tar_file_path = r'final.tar.gz'
-extract_to_path = r'Final.csv'
+extract_to_path = r'path_to_extract'
 
 # Call the function to extract the TAR.GZ file
 extract_tar(tar_file_path, extract_to_path)
 
-# Assuming the TAR.GZ file contains a CSV file
-extracted_csv_path = os.path.join(extract_to_path, "final.csv")
+# Assuming the TAR.GZ file contains a single CSV file directly
+extracted_csv_path = os.path.join(extract_to_path, "Final.csv")
+
+# Read the CSV file into a DataFrame
+df = pd.read_csv(extracted_csv_path)
+
 
 # Read the CSV file into a DataFrame
 df = pd.read_csv(extracted_csv_path)
