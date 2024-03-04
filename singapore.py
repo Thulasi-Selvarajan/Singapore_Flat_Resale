@@ -12,6 +12,7 @@ import os  # Import the os module for interacting with the operating system
 
 import pickle  # Import the pickle module for serializing/deserializing objects
 
+import tarfile
 #streamlit page config.
 st.set_page_config(page_title='Singapore Flat Resale Price Predictor', layout='wide',
                    initial_sidebar_state='expanded')
@@ -36,6 +37,19 @@ with st.sidebar:
 #df=pd.read_csv(r"C:\Users\Acer\Desktop\Python-V\Singapore Resale\final.csv")
 #df=df.drop(['Unnamed: 0'],axis=1) 
 
+
+def extract_tar(tar_file_path, extract_to_path):
+    with tarfile.open(tar_file_path, 'r') as tar:
+        tar.extractall(path=extract_to_path)
+
+# file usage:
+tar_file = (r'final.tar.gz')  # Path to the TAR.GZ file
+df = tar_file  # Path to extract the contents of the TAR.GZ file
+df=df.drop(['Unnamed: 0'],axis=1) 
+
+
+extract_tar(tar_file_path, extract_to_path)
+
 #page setup
 st.write(":blue[Get Started Here!]")
 #tabs 
@@ -59,10 +73,10 @@ with tab2:
 
     option = st.radio('**Select your option**',('Processed Data', 'Prediction Tab',),horizontal=True)    
 
-    #if option == 'Processed Data':
-        #st.header("Processed  Final Data")
+    if option == 'Processed Data':
+        st.header("Processed  Final Data")
 
-        #st.write(df) 
+        st.write(df) 
 
     if option == 'Prediction Tab':    
 
