@@ -33,8 +33,8 @@ with st.sidebar:
     st.write('* This predictive model will be based on historical data of resale flat transactions, and it aims to assist both potential buyers and sellers in estimating the resale value of a flat.')
     
 #read cleaned data
-df=pd.read_csv(r"C:\Users\Acer\Desktop\Python-V\Singapore Resale\final.csv")
-df=df.drop(['Unnamed: 0'],axis=1) 
+#df=pd.read_csv(r"C:\Users\Acer\Desktop\Python-V\Singapore Resale\final.csv")
+#df=df.drop(['Unnamed: 0'],axis=1) 
 
 #page setup
 st.write(":blue[Get Started Here!]")
