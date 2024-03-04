@@ -12,7 +12,7 @@ import os  # Import the os module for interacting with the operating system
 
 import pickle  # Import the pickle module for serializing/deserializing objects
 
-import tarfile
+
 #streamlit page config.
 st.set_page_config(page_title='Singapore Flat Resale Price Predictor', layout='wide',
                    initial_sidebar_state='expanded')
@@ -36,31 +36,6 @@ with st.sidebar:
 #read cleaned data
 #df=pd.read_csv(r"C:\Users\Acer\Desktop\Python-V\Singapore Resale\final.csv")
 #df=df.drop(['Unnamed: 0'],axis=1) 
-
-
-def extract_tar(tar_file_path, extract_to_path):
-    with tarfile.open(tar_file_path, 'r:gz') as tar:  # Specify 'r:gz' for reading gzipped TAR files
-        tar.extractall(path=extract_to_path)
-
-# Define the paths to your TAR.GZ file and the extraction destination
-tar_file_path = r'final.tar.gz'
-extract_to_path = r'path_to_extract'
-
-# Call the function to extract the TAR.GZ file
-extract_tar(tar_file_path, extract_to_path)
-
-# Assuming the TAR.GZ file contains a single CSV file directly
-extracted_csv_path = os.path.join(extract_to_path, "Final.csv")
-
-# Read the CSV file into a DataFrame
-df = pd.read_csv(extracted_csv_path)
-
-
-# Read the CSV file into a DataFrame
-df = pd.read_csv(extracted_csv_path)
-
-# Now you can work with the DataFrame 'df'
-
 
 # Now you can work with the DataFrame 'df'
 
@@ -87,10 +62,10 @@ with tab2:
 
     option = st.radio('**Select your option**',('Processed Data', 'Prediction Tab',),horizontal=True)    
 
-    if option == 'Processed Data':
-        st.header("Processed  Final Data")
+    #if option == 'Processed Data':
+        #st.header("Processed  Final Data")
 
-        st.write(df) 
+        #st.write(df) 
 
     if option == 'Prediction Tab':    
 
