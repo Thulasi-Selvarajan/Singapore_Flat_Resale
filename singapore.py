@@ -49,7 +49,7 @@ extract_to_path = r'path_to_extract'
 # Call the function to extract the TAR.GZ file
 extract_tar(tar_file_path, extract_to_path)
 
- Assuming the TAR.GZ file contains a CSV file
+#Assuming the TAR.GZ file contains a CSV file
 extracted_csv_path = extract_to_path
 
 # Read the CSV file into a DataFrame
