@@ -19,7 +19,7 @@ st.set_page_config(page_title='Singapore Flat Resale Price Predictor', layout='w
 with st.sidebar:
     st.write("## :blue[Singapore Flat Resale Price Predicton]")
     #image insertion
-    image_path = (r"C:\Users\Acer\Desktop\Python-V\Singapore Resale\image.png")  
+    image_path = image.png 
     image = Image.open(image_path)
 
     # Display the image using st.image()
