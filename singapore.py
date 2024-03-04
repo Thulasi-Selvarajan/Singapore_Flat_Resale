@@ -1,17 +1,23 @@
 # import necessary libraries
-import streamlit as st
-from PIL import Image 
-import pandas as pd
-from sklearn.ensemble import RandomForestRegressor
-import os
-import pickle
+
+import streamlit as st  # Import the Streamlit library
+
+from PIL import Image  # Import the Image module from PIL
+
+import pandas as pd  # Import pandas for data manipulation
+
+from sklearn.ensemble import RandomForestRegressor  # Import RandomForestRegressor
+
+import os  # Import the os module for interacting with the operating system
+
+import pickle  # Import the pickle module for serializing/deserializing objects
 
 #streamlit page config.
 st.set_page_config(page_title='Singapore Flat Resale Price Predictor', layout='wide',
                    initial_sidebar_state='expanded')
 
 with st.sidebar:
-    st.write("# :blue[Singapore Flat Resale Price Predicton]")
+    st.write("## :blue[Singapore Flat Resale Price Predicton]")
     #image insertion
     image_path = (r"C:\Users\Acer\Desktop\Python-V\Singapore Resale\image.png")  
     image = Image.open(image_path)
@@ -31,18 +37,19 @@ df=pd.read_csv(r"C:\Users\Acer\Desktop\Python-V\Singapore Resale\final.csv")
 df=df.drop(['Unnamed: 0'],axis=1) 
 
 #page setup
-
+st.write(":blue[Get Started Here!]")
 #tabs 
 tab1,tab2,tab3=st.tabs(['HOME','PREDICTION','PREDICTION AND CONCLUSION'])
 
 with tab1:
-
-    
-    st.write('### :violet[Overview]')
+    st.write("")
+    st.write("")
+    st.write("") 
+    st.write('##### :violet[Overview]')
     st.write('* The objective of this project is to develop a machine learning model and deploy it as a user-friendly web application that predicts the resale prices of flats in Singapore. ') 
-    st.write('### :violet[Tools and Technologies used]')
+    st.write('##### :violet[Tools and Technologies used]')
     st.write('* Python, Pandas, numpy, matplotlib, seaborn, Plotly, Streamlit, sklearn ')
-    st.write('### :violet[ML Model]')
+    st.write('##### :violet[ML Model]')
     st.write('* The ML model used in this project is :blue[Random Forest Regressor].')
     st.write('* Comparing other regressors, Random Forest Regressor had a high :red[R-squared score], which means it has performed best. ')
 
