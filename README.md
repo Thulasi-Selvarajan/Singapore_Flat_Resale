@@ -36,7 +36,7 @@ Welcome to the Singapore Resale Flat Prices Prediction project! This project inv
 
 **6. Render Deployment:**
 
-   https://singapore-flats-resale-12.onrender.com
+   https://singapore-flat-resale-e8l3.onrender.com/
 
 **Tools:**
    
