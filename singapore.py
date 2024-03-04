@@ -59,10 +59,10 @@ with tab2:
 
     option = st.radio('**Select your option**',('Processed Data', 'Prediction Tab',),horizontal=True)    
 
-    if option == 'Processed Data':
-        st.header("Processed  Final Data")
+    #if option == 'Processed Data':
+        #st.header("Processed  Final Data")
 
-        st.write(df) 
+        #st.write(df) 
 
     if option == 'Prediction Tab':    
 
