@@ -1,6 +1,6 @@
 pandas==2.2.1
 Pillow
 scikit_learn==1.4.1.post1
-streamlit==1.31.1
-streamlit==1.29.0
+streamlit
+streamlit
 
