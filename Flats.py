@@ -397,7 +397,7 @@ with tab3:
             def load_data():
                 # Load data
                 #data = pd.read_csv(r"C:\Users\Acer\Desktop\Python-V\Singapore Resale\final.csv")
-                 data = pd.read_csv(extracted_csv_path)
+                data = pd.read_csv(extracted_csv_path)
                 sample_df = data.sample(n=5000, random_state=42)
                 return sample_df
 
